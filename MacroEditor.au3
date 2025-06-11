@@ -18,7 +18,9 @@
 #include "core/functionManager.au3"
 
 ; Variables JSON
-Local $sLoadedChar = "", $oKeyMap = Null, $sCurrentAction = ""
+Local $sLoadedChar = ""
+Local $oKeyMap = Null
+Local $sCurrentAction = ""
 
 While 1
 	If WinActive($AppTitle) Then
@@ -44,7 +46,11 @@ While 1
 
         Case $btnCharger
             $sLoadedChar = GUICtrlRead($cbChar)
-            If $sLoadedChar = "" Then MsgBox(48, "Attention", "Sélectionne un personnage."): ContinueLoop
+            If $sLoadedChar = "" Then 
+				MsgBox(48, "Attention", "Sélectionnez un personnage.")
+				_setCharacterList()
+				ContinueLoop
+			EndIf
 
             ; Charger CharacterSettings.json
             Local $pathChar = $CharacterPath & "\" & $sLoadedChar & "\CharacterSettings.json"
