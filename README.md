@@ -14,4 +14,10 @@ Ce projet est un outil en cours de développement pour faciliter la copie et l�
 
 3. **Exécuter le programme**  
    Appuie sur **F5** dans l'éditeur pour lancer l’application  
-   *(ou utilise le menu `Tools > Go` ou `Build` pour créer ton propre fichier exe)*
+   _(ou utilise le menu `Tools > Go` ou `Build` pour créer ton propre fichier exe)_
+
+### source libs :
+
+https://github.com/J2TEAM/AutoIt-Imgur-UDF/blob/master/include/BinaryCall.au3
+
+https://github.com/J2TEAM/AutoIt-Imgur-UDF/blob/master/include/JSON.au3
